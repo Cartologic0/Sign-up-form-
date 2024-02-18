@@ -187,3 +187,11 @@ outline:none;
 a:hover {
     color:#743ad5;
 }
+
+#form-logo {
+  position: relative;
+  bottom: 10%;
+  right: 11%;
+  
+}
+
