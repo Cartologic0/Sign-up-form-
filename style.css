@@ -110,7 +110,7 @@ span {
 }
 
 
-div:not(.first-header, .second-header) {
+div:not(.first-header, .second-header, .kirby-head-label) {
     padding: 30px;
 }
 
@@ -195,3 +195,7 @@ a:hover {
   
 }
 
+.kirby-head-label {
+display:flex;
+justify-content: center;
+}
