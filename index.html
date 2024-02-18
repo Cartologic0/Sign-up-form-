@@ -8,7 +8,10 @@
     <link href="https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming" rel="stylesheet">
 </head>
 <body>
-    <div class="background-image"></div>
+
+    <div class="background-image">
+        <img id="form-logo" src="LineaNeon - Kirby.png" alt="" width="400px" height="300px">
+    </div>
     <link rel="stylesheet" href="PressStart2P-Regular.woff2">
     <div class="content">
     <div class="form-container">
@@ -32,7 +35,7 @@
             </div>
             <div class="form-phone">
                 <label for="phone" hidden="hidden">PHONE:</label>
-                <input type="tel" id="phone" name="phone" placeholder="PHONE" size="30" value="" maxlength="20" required>
+                <input type="tel" id="phone" name="phone" placeholder="PHONE" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="30" value="" maxlength="20" required>
             </div>
             <div class="form-password">
                 <label for="password" hidden="hidden">PASSWORD:</label>
