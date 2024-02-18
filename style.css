@@ -1,0 +1,189 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --color: #e6007e;
+}
+
+@import url(https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);
+
+@font-face {
+    font-family: "Retro Gaming";
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot");
+    src: url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4c19fc875e7ba1e6831129de3ab5ac0b.svg#Retro Gaming")format("svg");
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+  background-image:linear-gradient(to left, #743ad5, #d53a9d);
+
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 1rem;
+  font-family: "Retro Gaming";
+
+}
+
+.background-image {
+    background-image: url(_.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100vh;
+   width: 96vh;
+
+    
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    position:  absolute;
+}
+.form-container {
+    border: 2px solid;
+    border-image-slice: 1;
+  border-width: 5px;
+    color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(90deg, rgba(233,81,84,1) 0%, rgba(217,37,177,1) 39%, rgba(201,0,255,1) 100%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   border-radius: 5px;
+   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+   border-image-slice: 1;
+  }
+
+button:hover {
+   border-radius: 5px;
+   border: 2px solid var(--color);
+   -webkit-text-fill-color: var(--color);
+}
+
+input:focus {
+    border-color: var(--color);
+}
+span {
+    margin-left: 10px;
+   
+}
+
+.log-in-msg {
+    display: flex;
+    justify-content: center;
+    color: #743ad5;
+}
+
+.log-in-link {
+    color: var(--color);
+}
+
+
+div:not(.first-header, .second-header) {
+    padding: 30px;
+}
+
+
+
+div.first-header {
+   margin-bottom: 40px;
+   margin: 30px 30px;
+   background: -webkit-linear-gradient(90deg, rgba(233,81,84,1) 0%, rgba(217,37,177,1) 39%, rgba(201,0,255,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+input::-webkit-input-placeholder {
+    
+    color: var(--color);
+}
+
+.second-header {
+    font-size: 80%;
+    margin: 30px 30px;
+    margin-left: 45px;
+    background: -webkit-linear-gradient(90deg, rgba(233,81,84,1) 0%, rgba(217,37,177,1) 39%, rgba(201,0,255,1) 100%);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    background-color: inherit;
+    transition: all 0.5s ease-in;
+    font-family: inherit;
+    color: var(--color);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    
+}
+
+input:focus,
+input:focus-visible {
+border: 1px solid var(--color);
+outline:none;
+}
+
+
+label {
+    vertical-align: -7px;
+    line-height: 1.2em;
+    
+}
+
+input::placeholder {
+    content: none;
+}
+
+input:valid,
+input:valid:focus {
+border: 1px solid #66FF99;
+outline:none;
+}
+
+input:invalid:focus-visible{
+border: 1px solid #f70d1a;
+outline:none;
+}
+
+a:hover {
+    color:#743ad5;
+}
